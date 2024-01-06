@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2><u>Feedback Form</u></h2>
+    <br>
+    <form action="hello.js"> 
+        <label for="name">Name:</label>           
+        <input type="text" name="MyName" id="name">
+        <br><br><br>
+        <label for="ema">Email:</label>
+        <input type="email" name="MyEmail" id="ema">
+        <br><br><br>
+        <label for="dos">Date of submission:</label>
+        <input type="date" name="MyDOS" id="dos">
+        <br><br><br>
+        <label for="rate">Rating:</label>
+        <input type="number" name="MyRating" id="rate">
+        <br><br><br>
+        <label for="gend">Gender:</label>
+        Male<input type="radio" name="MyGender" > Female<input type="radio" name="MyGender" id="gend">
+        <br><br><br>
+        <label for="if">Are you a student of this university?</label>
+        <input type="checkbox" name="MyStatus" checked id="if">
+        <br><br><br>
+        <label for="coll">Select your college:</label>
+         <select name="MyCollege" id="coll">
+            <option value="IEMK" >IEM, Kolkata</option>
+            <option value="UEMK">UEM, Kolkata</option>
+            <option value="UEMJ" selected>UEM, Jaipur</option>
+        </select>
+        <br><br><br>
+        <label for="sugg">Give your suggestions:</label>
+        
+        <br>
+        <textarea name="MySugg" rows="10" cols="90" id="sugg"></textarea>
+        <br><br><br>
+        Submit Now  <input type="submit" value="MySubmit">   <input type="reset" value="Reset Now">
+
+    </form>
+</body>
+</html>
