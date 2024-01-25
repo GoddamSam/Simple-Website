@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2vh 2vw;
+    
+}
+
+nav h2{
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    align-items: center;
+    gap: 3vw;
+    margin-right: 5vw;
+}
+
+nav ul li{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
