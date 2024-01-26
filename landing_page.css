@@ -135,6 +135,14 @@ main{
    box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+#first{
+    color: #21089f;
+}
+
+#profile{
+    color: #b71506;
+}
+
 @media(max-width:600px){
     
 
@@ -208,7 +216,7 @@ main{
         width: 40%;
         height:80%;
         margin-top: 3vh;
-        margin-left:20vh;
+        margin-left:16vh;
     }
 
     
