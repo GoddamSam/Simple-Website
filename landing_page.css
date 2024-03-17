@@ -3,6 +3,7 @@
 
 
 
+
 :root{
     --primary-text-color:#183B56;
     --secondary-text-color:#577592;
@@ -60,6 +61,7 @@ li{
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline);
+    overflow: hidden;
 }
 
 .small-bold-text{
@@ -127,7 +129,10 @@ li{
 .main-nav{
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
+    
 }
+
 
 .Logo{
     padding:3px 20px 3px;
@@ -145,6 +150,10 @@ li{
 {
     justify-content: end;
     gap: 40px;
+}
+
+.nav-toggle{
+    display: none;
 }
 
 /* header */
@@ -214,7 +223,7 @@ header{
     padding: 80px 20px 0;
     background:url(./assets/asset\ 19.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
 }
 
 .features-header{
@@ -227,10 +236,14 @@ header{
 }
 
 .features-area{
-    margin-top: 30px;
+    margin-top: 60px;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+}
+
+.features-section p{
+    color: #577592;
 }
 
 .features-crd{
@@ -309,8 +322,8 @@ header{
 .examples-area{
     margin:40px 20px 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 
 .examples-card .card-text{
     position:absolute;
@@ -325,7 +338,7 @@ header{
 
 .examples-card:nth-child(1){
     width:23%;
-    min-height: 300px;
+    height: 300px;
     background-color: black;
     position:relative;
     background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 34.jpeg);
@@ -333,7 +346,7 @@ header{
 
 .examples-card:nth-child(2){
     width:23%;
-    min-height: 300px;
+    height: 300px;
     background-color: black;
     position:relative;
     background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 35.jpeg);
@@ -341,7 +354,7 @@ header{
 
 .examples-card:nth-child(3){
     width:23%;
-    min-height: 300px;
+    height: 300px;
     background-color: black;
     position:relative;
     background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 36.jpeg);
@@ -349,7 +362,7 @@ header{
 
 .examples-card:nth-child(4){
     width:23%;
-    min-height: 300px;
+    height: 300px;
     background-color: black;
     position:relative;
     background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 37.jpeg);
@@ -438,6 +451,9 @@ footer{
 
 .sub-footer-container ul{
     gap:30px;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
 }
 
 .sub-footer-container ul li{
@@ -449,3 +465,4 @@ footer{
 .sub-footer-container ul li:hover{
     color: #2294ed;
 }
+

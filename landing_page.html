@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usability Hub</title>
     <link rel="stylesheet" href="landing_page.css">
+    <link rel="stylesheet" href="landing_page_media_queries.css">
 </head>
 <body>
     <div class="top-banner">
@@ -17,7 +18,7 @@
         <div class="container">
             <div class="main-nav flex">
                 <a href="#" class="Logo"><img src="./assets/asset 0.png" alt="Company Logo"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -27,15 +28,20 @@
                     <li><a href="#" class="hover-link primary-btn">Sign up</a></li>
                 </ul>
                 </div>
+                <div>
+                    <a href="#" class="nav-toggle hover-link">
+                        <i class="fa-solid fa-bars" id="nav-toggle"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <header>
         <div class="container header-section flex">
-            <div class="header-left">
+            <div class="header-left" id="header-left">
                 <h1>Design Confidently</h1>
-                <p>UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
+                <p style="color: #577592;">UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
                 <a href="#" class="primary-btn get-started-btn">Get Started</a>
             </div>
             <div class="header-right">
@@ -139,7 +145,7 @@
     <section class="big-feature">
         <div class="container flex">
             <img src="./assets/asset 17.png" alt="big-feature-logo">
-            <div class="features-desc">
+            <div class="features-desc" id="big-features-3-desc">
                 <h4>Easier decision making for</h4>
                 <h3>Product managers</h3>
                 <p>Ensure you’re delivering the right features to the right customers by validating product concepts with your target audience.</p>
@@ -154,7 +160,7 @@
                 <a href="#" class="example-btn secondary-btn">See more examples<i class="fa-solid fa-right-long"></i></a>
             </div>
 
-            <div class="examples-area flex">
+            <div class="examples-area flex" id="examples-area">
                 <a href="#" class="examples-card">
                     <h3 class="card-text">Can user complete a task in my software interface?</h3>
                 </a>
@@ -227,10 +233,25 @@
                 <li>Security Information</li>
                 <li><i class="fa-brands fa-facebook"></i></li>
                 <li><i class="fa-brands fa-twitter"></i></li>
+                
             </ul>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/ad37456720.js" crossorigin="anonymous"></script>
 </body>
+<script>
+    const nav_links=document.getElementById('nav-links');
+    const nav_toggle=document.getElementById('nav-toggle');
+
+    nav_toggle.addEventListener('click',function(){
+        if(nav_links.classList.contains('active'))
+        {
+            nav_links.classList.remove('active');
+        }
+        else{
+            nav_links.classList.add('active');
+        }
+    });
+</script>
 </html>

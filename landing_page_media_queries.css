@@ -1,0 +1,238 @@
+@media screen and (max-width:991px){
+   
+    h3{
+        font-size: 1.2rem;
+    }
+
+    /* navbar */
+
+    .nav-toggle{
+        display: block;
+        padding: 30px;
+    }
+
+    .nav-toggle i{
+        transform: scale(1.5);
+    }
+    
+    nav>.container{
+        overflow: initial;
+    }
+
+    .nav-links{
+        position: absolute;
+        left:-100%;
+        top: 100%;
+        background-color: #fff;
+        width: 100%;
+        padding: 40px 20px 40px 0px;
+        text-align: center;
+    }
+
+    .active{
+        left: 0;
+    }
+    
+    .nav-links ul{
+        padding-inline: 20px;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+
+    /* examples */
+
+    #examples-area{
+        gap: 20px;
+    }
+   .examples-area>.examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    /* cta */
+
+    .cta{
+        padding-block: 80px;
+    }
+
+    /* header */
+    
+    .header-left{
+        padding-block:30px ;
+        
+    }
+    .header-left, .header-right{
+        padding-inline: 20px;
+    }
+
+    
+     /* big features */
+
+     .big-feature .features-desc{
+        padding-inline: 15px;
+     }
+
+     /* examples */
+
+     .exampels{
+        padding-block: 20px;
+     }
+
+     .examples-header h2{
+        margin-bottom: 35px;
+     }
+
+     /* footer */
+
+     .footer-section{
+        flex-direction: column;
+        text-align: center;
+        align-items:center;
+        gap: 40px;
+     }
+
+     .link-column{
+        display: flex;
+        align-items: center;
+     }
+
+     .footer-section .link-column ul{
+        padding-inline:20px;
+        align-items: center;
+        
+     }
+
+     /* .sub-footer */
+
+
+     .sub-footer-container ul{
+        
+        padding-inline:20px ;
+        align-items: center;
+    }
+
+    .sub-footer-container ul li {
+        display: inline-block;
+        text-align: center; /* Align list items to center */
+        margin: 0 10px; /* Adjust margin as needed */
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+
+    /* header  */
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+        padding-inline: 10px;
+        padding-block: 30px;
+    }
+
+   .primary-btn.get-started-btn{
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 80%;
+    }
+
+   .primary-btn{
+    width: 100%;
+    text-align: center;
+   }
+    
+    /* companies-section */
+
+    .companies-section{
+        margin-top: 10px;
+    }
+
+    .logos{
+        margin-top: 30px;
+    }
+
+    
+    /* features */
+
+    .features-section{
+        padding-block: 20px;
+        background-position: top;
+    }
+    
+    .features-crd{
+        min-width: calc(50% - 10px);
+    }
+
+    /* big features */
+
+    .big-feature>.container{
+        flex-direction: column;
+    }
+
+    #big-feature-2{
+        flex-direction: column;
+    }
+
+    #big-features-3-desc{
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:479px) {
+    
+    .container{
+        padding-inline: 10px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .features-crd{
+        min-width: 100%;
+        gap: 5px;
+    }
+
+    .features-area{
+        gap: 50px;
+    }
+
+    .big-feature img{
+        width:95%;
+    }
+
+    .examples-area>.examples-card{
+        width:100%;
+    }
+
+    .footer{
+        padding-block: 40px;
+    }
+
+    .sub-footer-container ul {
+        text-align: center; /* Align list items to center */
+    }
+
+}
+   
