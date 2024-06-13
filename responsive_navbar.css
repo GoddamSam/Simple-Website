@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Work Sans",sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    padding: 0 4.8rem;
+    height:8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e7f5ff;
+}
+
+.header .logo{
+    height:5rem;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.nav-links:link,
+.nav-links:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    color: #212529;
+}
+
+.nav-links:active,
+.nav-links:hover{
+ color: #364fc7;
+}
